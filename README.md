@@ -13,7 +13,6 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 <!-- PROJECT LOGO -->
@@ -24,9 +23,6 @@
   <p align="center">
     A basic project to know how to use Vue 3 along with Laravel 9.
     <br />
-    <br />
-    <a href="https://github.com/HenestrosaConH/TodoListWithtLaravelVue">View Demo</a>
-    ·
     <a href="https://github.com/HenestrosaConH/TodoListWithtLaravelVue/issues">Report Bug</a>
     ·
     <a href="https://github.com/HenestrosaConH/TodoListWithtLaravelVue/issues">Request Feature</a>
@@ -47,12 +43,12 @@
       <a href="#getting-started">Getting Started</a>
     </li>
 		<li>
-			<a href="#setting-up">Setting up Vue 3 and Bootstrap 5</a>
+			<a href="#setting-up-vue-3-and-bootstrap-5">Setting up Vue 3 and Bootstrap 5</a>
 			<ul>
-				<li href="vue-installation">Installation of Vue 3</li>
-				<li href="vue-setting-up">Setting up Vue 3 on the project</li>
-				<li href="bootstrap-installation">Installation of Boostrap 5</li>
-				<li href="bootstrap-setting-up">Installation of Boostrap 5</li>
+				<li href="#installation-of-vue-3">Installation of Vue 3</li>
+				<li href="#setting-up-vue-3-in-the-project">Setting up Vue 3 in the project</li>
+				<li href="#installation-of-bootstrap-5">Installation of Boostrap 5</li>
+				<li href="#setting-up-bootstrap-5-in-the-project">Setting up Boostrap 5 in the project</li>
 			</ul>
 		</li>
     <li><a href="#contributing">Contributing</a></li>
@@ -68,13 +64,13 @@
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
 <p>
-	As the description of the repository says, this is a small project that I made following the basic structure of
-	<a href="https://www.youtube.com/watch?app=desktop&v=UHSipe7pSac&ab_channel=Scrypster">this video</a> by the user 
+	As the description of the repository says, this is a small project that I've made following the basic structure of
+	<a href="https://www.youtube.com/watch?app=desktop&v=UHSipe7pSac&ab_channel=Scrypster">this video</a> by the user Youtube
 	<a href="https://www.youtube.com/channel/UCR1_G0EoEIb87wi3GPlk-CQ">Scrypster</a>.
 </p>
 
 <p>
-	The original creator makes the application in Vue 2 and Laravel 8, whereas I've made it with Vue 3 and Laravel 9.
+	The original creator makes the application in Vue 2 and Laravel 8, whereas I've made it in Vue 3 and Laravel 9.
 	I've also made use of Bootstrap 5 to give some basic yet elegant style to the elements.
 </p>
 
@@ -89,8 +85,7 @@
 			package.
 		</li>
 		<li>
-			Cleaner organization of <code>.vue</code> files along with renaming many of them to ensure a cohesive and simple
-			structure.
+			Cleaner organization of the <code>resources/js</code> directory along with renaming many of the <code>.js</code> and <code>.vue</code> files to ensure a cohesive and simplestructure.
 		</li>
 	</ul>
 </p>
@@ -126,6 +121,7 @@ command to compile the changes that you apply.
 
 Even though these frameworks are included in the project without the need of doing anything else, I'll show yo how to get Vue 3 and Bootstrap 5 working on Laravel 9, regardless of the nature of the project.
 
+<!-- INSTALLATION OF VUE 3 -->
 ### Installation of Vue 3
 
 <ol>
@@ -143,10 +139,12 @@ Even though these frameworks are included in the project without the need of doi
 	</li>
 </ol>
 
+<!-- SETTING UP VUE 3 IN THE PROJECT -->
 ### Setting up Vue 3 in the project
 
 Now that Vue is downloaded into the project, we need to add <code>.vue()</code> to <code>mix.js("resources/js/app.js", "public/js")</code> in the <code>webpack.mix.js</code> file in order to pass options to configure global styles and Vue component style extraction in Laravel.
 
+<!-- INSTALLATION OF VUE 5 -->
 ### Installation of Bootstrap 5
 
 <ol>
@@ -174,6 +172,7 @@ Now that Vue is downloaded into the project, we need to add <code>.vue()</code> 
 	</li>
 </ol>
 
+<!-- SETTING UP BOOTSTRAP 5 IN THE PROJECT -->
 ### Setting up Bootstrap 5 in the project
 
 <ol>
