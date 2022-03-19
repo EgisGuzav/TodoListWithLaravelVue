@@ -45,10 +45,10 @@
 		<li>
 			<a href="#setting-up-vue-3-and-bootstrap-5">Setting up Vue 3 and Bootstrap 5</a>
 			<ul>
-				<li href="#installation-of-vue-3">Installation of Vue 3</li>
-				<li href="#setting-up-vue-3-in-the-project">Setting up Vue 3 in the project</li>
-				<li href="#installation-of-bootstrap-5">Installation of Boostrap 5</li>
-				<li href="#setting-up-bootstrap-5-in-the-project">Setting up Boostrap 5 in the project</li>
+				<li><a href="#installation-of-vue-3">Installation of Vue 3</a></li>
+				<li><a href="#setting-up-vue-3-in-the-project">Setting up Vue 3 in the project</a></li>
+				<li><a href="#installation-of-bootstrap-5">Installation of Boostrap 5</a></li>
+				<li><a href="#setting-up-bootstrap-5-in-the-project">Setting up Boostrap 5 in the project</a></li>
 			</ul>
 		</li>
     <li><a href="#contributing">Contributing</a></li>
@@ -144,31 +144,21 @@ Even though these frameworks are included in the project without the need of doi
 
 Now that Vue is downloaded into the project, we need to add <code>.vue()</code> to <code>mix.js("resources/js/app.js", "public/js")</code> in the <code>webpack.mix.js</code> file in order to pass options to configure global styles and Vue component style extraction in Laravel.
 
-<!-- INSTALLATION OF VUE 5 -->
+<!-- INSTALLATION OF BOOTSTRAP 5 -->
 ### Installation of Bootstrap 5
 
 <ol>
 	<li>
-		In case that you haven't downloaded npm yet, you'll have to execute the following command in the root of the project:
-			```sh
-			npm install
-			```
+		In case that you haven't downloaded npm yet, you'll have to execute <code>npm install</code> in the root of the project:
 	</li>
 	<li>
-		Once npm has been installed, we need to install Bootstrap by executing. 
-		```sh
-			npm install bootstrap
-		```
+		Once npm has been installed, we need to install Bootstrap by executing <code>npm install bootstrap</code>.
 	</li>
 	<li>
 		We'll also have to install SASS and SASS loader in our project because Bootstrap makes use of this preprocessor of CSS.
-		```sh
-			npm install sass
-		```
+		<code>npm install sass</code>
 		Once it has finished with the installation, we need to install the SASS processor to convert the code to CSS.
-		```sh
-			npm install sass-loader
-		```
+		<code>npm install sass-loader</code>
 	</li>
 </ol>
 
