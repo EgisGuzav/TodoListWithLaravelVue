@@ -126,16 +126,10 @@ Even though these frameworks are included in the project without the need of doi
 
 <ol>
 	<li>
-		We need to install npm in our project by executing the following command in the root of the project:
-			```sh
-			npm install
-			```
+		We need to install npm in our project by executing <code>npm install</code> in the root of the project
 	</li>
 	<li>
-		Once npm has been installed, we need to install Vue by executing of this command: 
-		```sh
-			npm install vue ^3.0.0
-		```
+		Once npm has been installed, we need to install Vue by executing <code>npm install vue ^3.0.0</code>
 	</li>
 </ol>
 
