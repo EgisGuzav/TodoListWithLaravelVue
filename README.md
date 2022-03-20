@@ -65,7 +65,7 @@
 
 <p>
 	As the description of the repository says, this is a small project that I've made following the basic structure of
-	<a href="https://www.youtube.com/watch?app=desktop&v=UHSipe7pSac&ab_channel=Scrypster">this video</a> by the user Youtube
+	<a href="https://www.youtube.com/watch?app=desktop&v=UHSipe7pSac&ab_channel=Scrypster">this video</a> by the Youtube user
 	<a href="https://www.youtube.com/channel/UCR1_G0EoEIb87wi3GPlk-CQ">Scrypster</a>.
 </p>
 
@@ -80,12 +80,12 @@
 	<ul> 
 		<li>Checking the checkbox if the task has already been completed when getting the items through the API.</li> 
 		<li>
-			Including translations declared in the files located at the 'lang' folder. This has been possible thanks to the
+			Including translations declared in the files located in the 'lang' folder. This has been possible thanks to the
 			<a href="https://github.com/kg-bot/laravel-localization-to-vue">Laravel localization to Vue</a> 
 			package.
 		</li>
 		<li>
-			Cleaner organization of the <code>resources/js</code> directory along with renaming many of the <code>.js</code> and <code>.vue</code> files to ensure a cohesive and simplestructure.
+			Cleaner organization of the <code>resources/js</code> directory along with renaming many of the <code>.js</code> and <code>.vue</code> files to ensure a cohesive and simple structure.
 		</li>
 	</ul>
 </p>
@@ -95,8 +95,6 @@
 <!-- BUILT WITH -->
 
 ### Built With
-
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
 -   [Vue 3](https://vuejs.org/)
 -   [Laravel 9](https://laravel.com)
@@ -120,40 +118,42 @@ Don't forget to use Apache Server (or such as the likes of it) to host the appli
 
 ## Setting up Vue 3 and Bootstrap 5
 
-Even though these frameworks are included in the project without the need of doing anything else, I'll show yo how to get Vue 3 and Bootstrap 5 working on Laravel 9, regardless of the nature of the project.
+Even though these frameworks are included in the project right off the bat, I'll show you how to get Vue 3 and Bootstrap 5 working on Laravel 9 from the beginning.
 
 <!-- INSTALLATION OF VUE 3 -->
 ### Installation of Vue 3
 
 <ol>
 	<li>
-		We need to install npm in our project by executing <code>npm install</code> in the root of the project
+		We need to install npm in our project by executing <code>npm install</code> in the root of it
 	</li>
 	<li>
-		Once npm has been installed, we need to install Vue by executing <code>npm install vue ^3.0.0</code>
+		Once npm has been installed, we need to install the Vue package by executing <code>npm install vue ^3.0.0</code>.
 	</li>
 </ol>
 
 <!-- SETTING UP VUE 3 IN THE PROJECT -->
 ### Setting up Vue 3 in the project
 
-Now that Vue is downloaded into the project, we need to add <code>.vue()</code> to <code>mix.js("resources/js/app.js", "public/js")</code> in the <code>webpack.mix.js</code> file in order to pass options to configure global styles and Vue component style extraction in Laravel.
+Now that Vue has been downloaded into the project, we need to add <code>.vue()</code> to <code>mix.js("resources/js/app.js", "public/js")</code> in the <code>webpack.mix.js</code> file in order to pass options to configure global styles and Vue component style extraction in Laravel.
+
+<hr>
 
 <!-- INSTALLATION OF BOOTSTRAP 5 -->
 ### Installation of Bootstrap 5
 
 <ol>
 	<li>
-		In case that you haven't downloaded npm yet, you'll have to execute <code>npm install</code> in the root of the project:
+		In case that you haven't downloaded npm yet, you'll have to execute <code>npm install</code> in the root of the project.
 	</li>
 	<li>
 		Once npm has been installed, we need to install Bootstrap by executing <code>npm install bootstrap</code>.
 	</li>
 	<li>
-		We'll also have to install SASS and SASS loader in our project because Bootstrap makes use of this preprocessor of CSS.
-		<code>npm install sass</code>
-		Once it has finished with the installation, we need to install the SASS processor to convert the code to CSS.
-		<code>npm install sass-loader</code>
+		We'll also have to install SASS and SASS loader in our project because Bootstrap makes use of this preprocessor of CSS. We do it by executing <code>npm install sass</code>.
+	</li>
+	<li>
+		Once the installation has finished, we need to install the SASS processor to convert the SASS code to CSS. The command is <code>npm install sass-loader</code>.
 	</li>
 </ol>
 
@@ -172,12 +172,11 @@ Now that Vue is downloaded into the project, we need to add <code>.vue()</code> 
 		</p>
 	</li>
 	<li>
-		Having done that, now we have to append <code>.sass('resources/sass/app.scss', 'public/css')</code> to the <code>mix</code> to let Laravel know that the compiled version of the SASS styles have to be compiled into the <code>public/css</code> directory.
+		Having done that, now we have to append <code>.sass('resources/sass/app.scss', 'public/css')</code> to the <code>mix</code> to let Laravel know that the compiled version of the SASS styles have to be moved into the <code>public/css</code> directory.
 	</li>
 	<li>Now we can compile the project to generate the CSS file in the <code>public/css</code> directory that we just set up by executing <code>npm run dev</code>.</li>
 	<li>
-		If you have followed all the steps correctly, now you only have to add <code>&lt;link href="{{ asset('css/app.css') }}" rel="stylesheet"&gt;
-	</code> (or <code>mix('css/app.css')</code>, depending of your purpose) to the <code>&lt;head&gt;</code> of the Blade templates.</li>
+		If you have followed all the steps correctly, now you only have to add <code>&lt;link href="{{ asset('css/app.css') }}" rel="stylesheet"&gt;</code> (or <code>mix('css/app.css')</code>, depending of your purpose) to the <code>&lt;head&gt;</code> of the Blade templates to import the stylesheet generated by Webpack.</li>
 </ol>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -216,7 +215,7 @@ Project Link: [https://github.com/HenestrosaConH/TodoListWithtLaravelVue](https:
 ## Acknowledgments
 
 As I said at the beginning, all the credits to <a href="https://www.youtube.com/channel/UCR1_G0EoEIb87wi3GPlk-CQ">Scrypster</a> for
-the initial idea of the project and to these repositories that have helped me to make this project/README!
+the initial idea of the project and to these repositories that have helped me to make this project/README:
 
 -   [Laravel localization to Vue](https://github.com/kg-bot/laravel-localization-to-vue)
 -   [FontAwesome](https://fontawesome.com/docs/web/use-with/vue/)
