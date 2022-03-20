@@ -109,11 +109,12 @@ This section should list any major frameworks/libraries used to bootstrap your p
 ## Getting Started
 
 To make the project work on your PC, you have to create a <code>.env</code> file and specify there the 
-credentials of the DB that you'll have to create in order to make CRUD operations with the tasks. Other than
-that, the project is pretty much settled to be executed. 
+credentials of the DB that you'll have to create in order to make CRUD operations with the tasks.
 
-Don't forget to use Apache Server (or such as the likes of it) to host it and to run the <code>npm run watch</code>
-command to compile the changes that you apply.
+You'll have to execute <code>composer install</code> and <code>npm install</code> to install the packages indicated in the files <code>composer.lock</code> and <code>package-lock.json</code>, respectively.
+
+
+Don't forget to use Apache Server (or such as the likes of it) to host the application (I like to use Laragon in Windows and Valet in Mac for local deployment) and to run the <code>npm run watch</code> command to auto-compile the changes that you apply in the project.
 
 <!-- SETTING UP VUE 3 AND BOOTSTRAP 5 -->
 
