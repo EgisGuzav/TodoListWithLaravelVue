@@ -49,9 +49,6 @@ export default {
         .get("/api/items")
         .then((response) => {
           this.items = response.data;
-          this.items.forEach((item) => {
-            item.completed = item.completed ? true : false;
-          });
         })
         .catch((error) => {
           console.log(error);
