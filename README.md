@@ -83,6 +83,9 @@
 		<li>
 			Cleaner organization of the <code>resources/js</code> directory along with renaming many of the <code>.js</code> and <code>.vue</code> files to ensure a cohesive and simple structure.
 		</li>
+        <li>
+			Use of factories and seeders to insert dummy rows to the DB.
+		</li>
 	</ul>
 </p>
 
@@ -107,8 +110,9 @@ credentials of the DB that you'll have to create in order to make CRUD operation
 
 You'll have to execute <code>composer install</code> and <code>npm install</code> to install the packages indicated in the files <code>composer.lock</code> and <code>package-lock.json</code>, respectively.
 
-
 Don't forget to use Apache Server (or such as the likes of it) to host the application (I like to use Laragon in Windows and Valet in Mac for local deployment) and to run the <code>npm run watch</code> command to auto-compile the changes that you apply in the project.
+
+Once the project is being locally hosted, execute the command `php artisan migrate:fresh --seed` to insert dummy tasks to the DB. This is done by the ItemFactory and ItemSeed files located in the `database` directory.
 
 <!-- SETTING UP VUE 3 AND BOOTSTRAP 5 -->
 
